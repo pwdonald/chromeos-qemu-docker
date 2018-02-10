@@ -62,7 +62,7 @@ What you will need:
    * Login with root & the password you setup in step 8.
    * You may have to add your nameservers again.
    * Run `apk --no-cache update`
-   * Run `apk install docker`
+   * Run `apk --no-cache add docker`
 11. Docker is now installed!
    * Start the docker service with
      ```
