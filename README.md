@@ -39,7 +39,7 @@ What you will need:
    (NOTE: make sure you're aware of what directory you're in i.e. /storage/emulated/0/Download can be wiped by CHromeOS periodically as space is needed so backup often!)
    * This command will create a 4GB dynamically allocated (qcow2) virtual drive.
    ```
-   qemu-img create -f qcow2 virtual_disk 4G
+   qemu-img create -f qcow2 virtual_drive 4G
    ```
 7. Run the `setup_alpine.sh` script in whichever directory your virtual drive exists to start the VM.
    * This may take a few minutes to start, resulting in a black screen with a cursor.
