@@ -2,6 +2,8 @@
 ## No Developer Mode Needed.
 #### Tutorial for running Docker with an Alpine Linux Host inside of QEMU VM on a ChromeOS/Termux host.
 
+![Screenshot](/screenshots/screenshot-alpine-linux.png?raw=true "ChromeOS+qemu+Alpine Linux")
+
 **Why would you choose this method over crouton?**
 Crouton requires enabling developer mode on your ChromeOS device which breaks the security model of ChromeOS. This is fine for most developers but you trade security for performance. My goal was instead to trade performance for security.
 
