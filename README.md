@@ -51,7 +51,11 @@ What you will need:
    ```
    qemu-img create -f qcow2 virtual_drive 4G
    ```
-8. Run the `setup_alpine.sh` script in whichever directory your virtual drive exists to start the VM.
+8. Run the command 
+   ```
+   bash ./chromeos-qemu-docker/scripts/setup_alpine.sh
+   ``` 
+   * This script should be run in whichever directory your virtual drive exists to start the VM.
    * This may take a few minutes to start, resulting in a black screen with a cursor.
    * If you've been using the Termux session for a while you may see some of your history creep into view instead of a black screen.
 9. Once inside the VM:
@@ -67,14 +71,17 @@ What you will need:
    Then attempt to run the `alpine-setup` command again.
 10. Once the `alpine-setup` script is complete--it will instruct you to restart the machine.
    * To exit the VM Press **Ctrl + A, X**.
-11. Congrats! You've installed Alpine Linux!
-   * Use the `start_persist.sh` script from this repo in the directory with your virtual drive to start the VM.
+   **Congrats! You've installed Alpine Linux!**
+11. Run the command:
+   ```
+   bash ./chromeos-qemu-docker/scripts/start_persist.sh
+   ```
    * Login with root & the password you setup in step 8.
    * You may have to add your nameservers again.
    * Run `apk --no-cache update`
    * Run `apk --no-cache add docker`
-11. Docker is now installed!
-   * Start the docker service with
+   **Docker is now installed!**
+12. Start the docker service with
      ```
      service docker start
      ```
