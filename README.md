@@ -54,8 +54,8 @@ What you will need:
    qemu-img create -f qcow2 virtual_drive 4G
    ```
 8. Download the latest version of the *virtual* ISO from the Alpine Linux website.
-   a. Rename the iso to alpine_x86_64.iso
-   b. Run the command 
+   1. Rename the iso to alpine_x86_64.iso
+   2. Run the command 
       ```
       bash ./chromeos-qemu-docker/scripts/setup_alpine.sh
       ``` 
