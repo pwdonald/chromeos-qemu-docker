@@ -92,12 +92,4 @@ What you will need:
      service docker start
      ```
    * You can now use docker as you would in a traditional environment.
-   * The `start_persist.sh` script maps ports 22 and 80 from the virtual environment to 10020 and 10080 respectively on the Termux environment. You can utilize these ports from your ChromeOS env by finding the IP address of your Termux session. (ADD INSTRUCTIONS)
-   
-#### To Do
-* Include better directory management instructions.
-* Add instructions for shared folder from host -> VM.
-* Add port management instructions.
-* Create convienence script.
-* Add tutorials for NGINX/Common dockerized apps.
-   
+   * The `start_persist.sh` script maps ports 22 and 80 from the virtual environment to 10020 and 10080 respectively on the Termux environment. You can utilize these ports from your ChromeOS env by finding the IP address of your Termux session.
