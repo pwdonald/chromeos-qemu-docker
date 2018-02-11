@@ -20,9 +20,9 @@ What you will need:
    pkg update
    pkg upgrade
    pkg install coreutils
-   pkg install termux-tools proot util-linux net-tools openssh 
+   pkg install termux-tools proot util-linux net-tools openssh git
    ```
-3. Setup storage:
+2. Setup storage:
    ```
    termux-setup-storage
    ```
@@ -35,16 +35,20 @@ What you will need:
     ```
     pkg install qemu-system
     ```
-6. Create Virtual Storage Device: 
+6. Clone this repo:
+   ```
+   git clone https://github.com/pwdonald/chromeos-qemu-docker.git
+   ```
+7. Create Virtual Storage Device: 
    (NOTE: make sure you're aware of what directory you're in i.e. /storage/emulated/0/Download can be wiped by ChromeOS periodically as space is needed so backup often!)
    * This command will create a 4GB dynamically allocated (qcow2) virtual drive.
    ```
    qemu-img create -f qcow2 virtual_drive 4G
    ```
-7. Run the `setup_alpine.sh` script in whichever directory your virtual drive exists to start the VM.
+8. Run the `setup_alpine.sh` script in whichever directory your virtual drive exists to start the VM.
    * This may take a few minutes to start, resulting in a black screen with a cursor.
    * If you've been using the Termux session for a while you may see some of your history creep into view instead of a black screen.
-8. Once inside the VM:
+9. Once inside the VM:
    * Login with username root.
    * Run the following command:
    ```
@@ -55,9 +59,9 @@ What you will need:
    echo "nameserver 8.8.8.8" > /etc/resolv.conf
    ```
    Then attempt to run the `alpine-setup` command again.
-9. Once the `alpine-setup` script is complete--it will instruct you to restart the machine.
+10. Once the `alpine-setup` script is complete--it will instruct you to restart the machine.
    * To exit the VM Press **Ctrl + A, X**.
-10. Congrats! You've installed Alpine Linux!
+11. Congrats! You've installed Alpine Linux!
    * Use the `start_persist.sh` script from this repo in the directory with your virtual drive to start the VM.
    * Login with root & the password you setup in step 8.
    * You may have to add your nameservers again.
