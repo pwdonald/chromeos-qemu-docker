@@ -2,6 +2,9 @@
 ## No Developer Mode Needed.
 #### Tutorial for running Docker with an Alpine Linux Host inside of QEMU VM on a ChromeOS/Termux host.
 
+**Why would you choose this method over crouton?**
+Crouton requires enabling developer mode on your ChromeOS device which breaks the security model of ChromeOS. This is fine for most developers but you trade security for performance. My goal was instead to trade performance for security.
+
 **Warning: Tested on Samsung Chromebook Pro (Intel m3 x86_64 w/ ChromeOS 63, 64) other hardware results may vary.**
 *I would be interested to know about other ChromeOS devices, so please let me know your results via PR or email*
 
@@ -74,4 +77,10 @@ What you will need:
      ```
    * You can now use docker as you would in an traditional environment.
    * The `start_persist.sh` script maps ports 22 and 80 from the virtual environment to 10020 and 10080 respectively on the Termux environment. You can utilize these ports from your ChromeOS env by finding the IP address of your Termux session. (ADD INSTRUCTIONS)
+   
+#### To Do
+* Include better directory management instructions.
+* Add port management instructions.
+* Create convienence script.
+* Add tutorials for NGINX/Common dockerized apps.
    
