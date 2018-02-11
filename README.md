@@ -8,6 +8,8 @@ Crouton requires enabling developer mode on your ChromeOS device which breaks th
 **Warning: Tested on Samsung Chromebook Pro (Intel m3 x86_64 w/ ChromeOS 63, 64) other hardware results may vary.**
 *I would be interested to know about other ChromeOS devices, so please let me know your results via PR or email*
 
+**ARM Processor based ChromeOS Devices will have to use the `qemu-system-x86_64` command which requires modifiying the two scripts in the script directory of this repo.**
+
 What you will need:
 * An hour of time.
 * A ChromeOS Device with Android Apps support. (Again, Developer Mode is **NOT** needed)
