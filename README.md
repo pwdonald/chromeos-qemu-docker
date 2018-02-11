@@ -31,6 +31,7 @@ What you will need:
    ```
    termux-setup-storage
    ```
+   *For more information about directories in Termux see [this stack overflow post](https://android.stackexchange.com/questions/166538/where-is-the-folder-that-termux-defaults-to).*
 4. Add the X/GUI Repos:
    ```
    wget https://raw.githubusercontent.com/xeffyr/termux-x-repository/master/enablerepo.sh
