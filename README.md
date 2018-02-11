@@ -26,7 +26,9 @@ What you will need:
    pkg upgrade
    pkg install coreutils
    pkg install termux-tools proot util-linux net-tools openssh git
+   pkg install wget
    ```
+   **NOTE: It is important to install wget or https will fail due to an older verison that comes with Termux.**
 2. Setup storage:
    ```
    termux-setup-storage
@@ -51,13 +53,15 @@ What you will need:
    ```
    qemu-img create -f qcow2 virtual_drive 4G
    ```
-8. Run the command 
-   ```
-   bash ./chromeos-qemu-docker/scripts/setup_alpine.sh
-   ``` 
-   * This script should be run in whichever directory your virtual drive exists to start the VM.
-   * This may take a few minutes to start, resulting in a black screen with a cursor.
-   * If you've been using the Termux session for a while you may see some of your history creep into view instead of a black screen.
+8. Download the latest version of the *virtual* ISO from the Alpine Linux website.
+   a. Rename the iso to alpine_x86_64.iso
+   b. Run the command 
+      ```
+      bash ./chromeos-qemu-docker/scripts/setup_alpine.sh
+      ``` 
+      * This script should be run in whichever directory your virtual drive exists to start the VM.
+      * This may take a few minutes to start, resulting in a black screen with a cursor.
+      * If you've been using the Termux session for a while you may see some of your history creep into view instead of a black screen.
 9. Once inside the VM:
    * Login with username root.
    * Run the following command:
