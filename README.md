@@ -36,7 +36,7 @@ What you will need:
     pkg install qemu-system
     ```
 6. Create Virtual Storage Device: 
-   (NOTE: make sure you're aware of what directory you're in i.e. /storage/emulated/0/Download can be wiped by CHromeOS periodically as space is needed so backup often!)
+   (NOTE: make sure you're aware of what directory you're in i.e. /storage/emulated/0/Download can be wiped by ChromeOS periodically as space is needed so backup often!)
    * This command will create a 4GB dynamically allocated (qcow2) virtual drive.
    ```
    qemu-img create -f qcow2 virtual_drive 4G
