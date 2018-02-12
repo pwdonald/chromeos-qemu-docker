@@ -1,4 +1,4 @@
-# Termux + QEMU + Alpine Linux = Docker on ChromeOS w/o Developer Mode
+# Termux + QEMU + Alpine Linux = Docker on Stock ChromeOS
 ## No Developer Mode Needed.
 #### Tutorial for running Docker with an Alpine Linux Host inside of QEMU VM on a ChromeOS/Termux host.
 
