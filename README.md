@@ -12,13 +12,12 @@ Crouton requires enabling developer mode on your ChromeOS device which breaks th
 
 **ARM Processor based ChromeOS Devices will have to use the `qemu-system-x86_64` command which requires modifiying the two scripts in the script directory of this repo.**
 
-What you will need:
-    * An hour of time.
-    * A ChromeOS Device with Android Apps support. (Again, Developer Mode is **NOT** needed)
-    * The [**Termux App**](https://github.com/termux/termux-app) [Play Store Link](https://play.google.com/store/apps/details?id=com.termux&hl=en)
-    * The [**Termux X/GUI Repos**](https://github.com/xeffyr/termux-x-repository)
-    * The latest [Alpine **Virutal** ISO (x86_64)](https://alpinelinux.org/downloads/)
-  (NOTE: I could not get the standard Alpine ISO to work, so far I've only managed to get the *Virtual* version to work)
+* What you will need:
+    - An hour of time.
+    - A ChromeOS Device with Android Apps support. (Again, Developer Mode is **NOT** needed)
+    - The [**Termux App**](https://github.com/termux/termux-app) [Play Store Link](https://play.google.com/store/apps/details?id=com.termux&hl=en)
+    - The [**Termux X/GUI Repos**](https://github.com/xeffyr/termux-x-repository)
+    - The latest [Alpine **Virutal** ISO (x86_64)](https://alpinelinux.org/downloads/) (NOTE: I could not get the standard Alpine ISO to work, so far I've only managed to get the *Virtual* version to work)
   
 ### Installation Steps
 1. Install Termux.
