@@ -101,3 +101,8 @@ Crouton requires enabling developer mode on your ChromeOS device which breaks th
     ```
     * You can now use docker as you would in a traditional environment.
     * The `start_persist.sh` script maps ports 22 and 80 from the virtual environment to 10020 and 10080 respectively on the Termux environment. You can utilize these ports from your ChromeOS env by finding the IP address of your Termux session.
+
+### Supported Devices
+This is a list of devices with report(s) of successful installation.
+* Samsung Chromebook Pro
+* Asus C302
