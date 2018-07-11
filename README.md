@@ -106,3 +106,4 @@ Crouton requires enabling developer mode on your ChromeOS device which breaks th
 This is a list of devices with report(s) of successful installation.
 * Samsung Chromebook Pro
 * Asus C302
+* Acer Chromebook 14 CP5-471
